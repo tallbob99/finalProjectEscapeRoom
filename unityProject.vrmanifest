@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.finalprojectvrexprience.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\david\\OneDrive\\Desktop\\New folder\\Final project, VR exprience\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Final project, VR exprience [Testing]"
+        }
+      }
+    }
+  ]
+}
