@@ -6,14 +6,13 @@ using UnityEngine.UI;
 public class NumberLock : MonoBehaviour
 {
     public Text Number;
-    public Text correctNumber;
-    public bool numberCorrect;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         Number.text = "0";
-        correctNumber.text = "7";
+        
     }
 
 
@@ -62,10 +61,6 @@ public class NumberLock : MonoBehaviour
             Number.text = "0";
         }
 
-        if (Number.text == correctNumber.text) 
-        {
-            Debug.Log("correct");
         
-        }
     }
 }
