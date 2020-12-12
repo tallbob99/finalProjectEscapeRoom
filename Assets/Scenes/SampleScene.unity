@@ -316,17 +316,17 @@ MonoBehaviour:
   childCollider: {fileID: 1008443709}
   linearMapping: {fileID: 0}
   hoverLock: 0
-  limited: 0
+  limited: 1
   frozenDistanceMinMaxThreshold: {x: 0.1, y: 0.2}
   onFrozenDistanceThreshold:
     m_PersistentCalls:
       m_Calls: []
-  minAngle: -45
+  minAngle: -90
   freezeOnMin: 0
   onMinAngle:
     m_PersistentCalls:
       m_Calls: []
-  maxAngle: 45
+  maxAngle: 0
   freezeOnMax: 0
   onMaxAngle:
     m_PersistentCalls:
@@ -1659,6 +1659,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: table
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5a257d1dd27f46a479171a1cb9044cf1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a257d1dd27f46a479171a1cb9044cf1, type: 3}
 --- !u!1 &985664547
@@ -2147,22 +2152,22 @@ MonoBehaviour:
   childCollider: {fileID: 324875650}
   linearMapping: {fileID: 0}
   hoverLock: 0
-  limited: 0
+  limited: 1
   frozenDistanceMinMaxThreshold: {x: 0.1, y: 0.2}
   onFrozenDistanceThreshold:
     m_PersistentCalls:
       m_Calls: []
-  minAngle: -45
+  minAngle: -90
   freezeOnMin: 0
   onMinAngle:
     m_PersistentCalls:
       m_Calls: []
-  maxAngle: 45
+  maxAngle: 0
   freezeOnMax: 0
   onMaxAngle:
     m_PersistentCalls:
       m_Calls: []
-  forceStart: 0
+  forceStart: 1
   startAngle: 0
   rotateGameObject: 1
   debugPath: 0
@@ -2248,7 +2253,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
