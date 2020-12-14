@@ -13,7 +13,9 @@ public class codeChecker : MonoBehaviour
     public Text correctNumber2;
     public Text correctNumber3;
     public Text correctNumber4;
-
+    public MeshCollider interactableCollider;
+    public MeshCollider staticCollider;
+    public GameObject Lock;
     // Update is called once per frame
     void Update()
     {
@@ -22,8 +24,9 @@ public class codeChecker : MonoBehaviour
             
             
                 Debug.Log("code correct");
-               
-                
+            interactableCollider.enabled = true;
+            staticCollider.enabled = false;
+            Lock.SetActive(false);
             
             
 
