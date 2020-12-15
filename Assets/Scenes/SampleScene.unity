@@ -3173,7 +3173,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &767556887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6774,7 +6774,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &1810974006
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8287,9 +8287,9 @@ MonoBehaviour:
   correctNumber2: {fileID: 1750533576}
   correctNumber3: {fileID: 2146814345}
   correctNumber4: {fileID: 496381162}
-  interactableCollider: {fileID: 0}
-  staticCollider: {fileID: 0}
-  Lock: {fileID: 0}
+  interactableCollider: {fileID: 1741781488}
+  staticCollider: {fileID: 259249872}
+  Lock: {fileID: 919132148881551747}
 --- !u!1 &919132149036834447
 GameObject:
   m_ObjectHideFlags: 0
