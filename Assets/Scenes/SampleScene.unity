@@ -152,12 +152,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c028486ffafe7f3498001e41afabc835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 180
+  timeRemaining: 70
   timerIsRunning: 0
   timeText: {fileID: 1387383244}
   watchBeep: {fileID: 1706941}
   watchBeeping: 0
   twoMinutes: 0
+  twoMinutesStop: 0
+  oneMinute: 0
 --- !u!4 &1706939
 Transform:
   m_ObjectHideFlags: 0

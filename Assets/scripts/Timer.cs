@@ -12,6 +12,8 @@ public class Timer : MonoBehaviour
     public AudioSource watchBeep;
     public bool watchBeeping;
     public bool twoMinutes = false;
+    public bool twoMinutesStop = false;
+    public bool oneMinute = false;
 
     private void Start()
     {
@@ -21,28 +23,8 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        if (twoMinutes == false)
-        {
-            if (watchBeeping == false)
-            {
-                if (timeRemaining < 120)
-                {
-                    watchBeep.Play();
-                    watchBeeping = true;
-                    twoMinutes = true;
-                }
-            }
-        }
-        else
-        {
-            if (timeRemaining < 115)
-            {
-                watchBeep.Stop();
-                watchBeeping = false;
-            }
-
-        }
         
+
 
         if (timerIsRunning)
         {
@@ -50,14 +32,51 @@ public class Timer : MonoBehaviour
             {
                 timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
-                
-                
+                if (twoMinutes == false)
+                {
+                    if (watchBeeping == false)
+                    {
+                        if (timeRemaining < 120)
+                        {
+                            watchBeep.Play();
+                            watchBeeping = true;
+                            twoMinutes = true;
+                        }
+                    }
+                }
+                else
+                {
+                    if (twoMinutesStop == false)
+                    {
+                        if (timeRemaining < 115)
+                        {
+                            watchBeep.Stop();
+                            watchBeeping = false;
+                            twoMinutesStop = true;
+                        }
+                    }
+                }
+
+                if (oneMinute == false)
+                {
+                    if (watchBeeping == false)
+                    {
+                        if (timeRemaining < 60)
+                        {
+                            watchBeep.Play();
+                            watchBeeping = true;
+                            oneMinute = true;
+                        }
+                    }
+                }
+
             }
             else
             {
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
+                watchBeep.Stop();
             }
         }
 
