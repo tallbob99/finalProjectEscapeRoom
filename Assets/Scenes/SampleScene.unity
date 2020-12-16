@@ -500,7 +500,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 919132148881551748}
+      - m_Target: {fileID: 0}
         m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
@@ -12478,9 +12478,9 @@ GameObject:
   - component: {fileID: 1261073430}
   - component: {fileID: 1261073427}
   - component: {fileID: 1261073428}
-  - component: {fileID: 919132148881551748}
   - component: {fileID: 919132148881551750}
   - component: {fileID: 919132148881551749}
+  - component: {fileID: 919132148881551748}
   m_Layer: 0
   m_Name: phone
   m_TagString: Untagged
@@ -12495,9 +12495,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132148881551747}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff0d68d86f385347bf252893f4624cf, type: 3}
+  m_Script: {fileID: 11500000, guid: d05093056a75a5d4a9c143f8f4dce846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Number1: {fileID: 922434656}
@@ -12508,9 +12508,8 @@ MonoBehaviour:
   correctNumber2: {fileID: 1750533576}
   correctNumber3: {fileID: 2146814345}
   correctNumber4: {fileID: 496381162}
-  interactableCollider: {fileID: 1741781488}
-  staticCollider: {fileID: 259249872}
-  Lock: {fileID: 919132148881551747}
+  endMenu1: {fileID: 0}
+  timer: {fileID: 1706937}
 --- !u!114 &919132148881551749
 MonoBehaviour:
   m_ObjectHideFlags: 0
