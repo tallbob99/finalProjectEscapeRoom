@@ -1,39 +1,45 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public bool timerRunning = false;
     public float timeRemaining = 10;
+    public bool timerIsRunning = false;
+    public Text timeText;
 
-
-    void Start()
+    private void Start()
     {
-        
-        timerRunning = true;
+        // Starts the timer automatically
+        timerIsRunning = true;
     }
 
-    public void Update()
+    void Update()
     {
-        timer();
-    }
-    public void timer()
-    {
-        if (timerRunning == true)
+        if (timerIsRunning)
         {
-            Debug.Log("you have " + timeRemaining + " seconds left");
-
             if (timeRemaining > 0)
-            { timeRemaining -= Time.deltaTime; }
-            //tells timer to output message when time up
-
+            {
+                timeRemaining -= Time.deltaTime;
+                DisplayTime(timeRemaining);
+            }
             else
             {
-                Debug.Log("out of time");
+                Debug.Log("Time has run out!");
                 timeRemaining = 0;
-                timerRunning = false;
+                timerIsRunning = false;
             }
         }
+    }
+
+    void DisplayTime(float timeToDisplay)
+    {
+        timeToDisplay += 1;
+
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+
+        timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
