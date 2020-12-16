@@ -7,7 +7,7 @@ using UnityEngine.Audio;
 public class Timer : MonoBehaviour
 {
     public float timeRemaining = 180;
-    public bool timerIsRunning = false;
+    public bool timerIsRunning = true;
     public Text timeText;
     public AudioSource watchBeep;
     public bool watchBeeping;
@@ -15,11 +15,7 @@ public class Timer : MonoBehaviour
     public bool twoMinutesStop = false;
     public bool oneMinute = false;
 
-    private void Start()
-    {
-        // Starts the timer automatically
-        timerIsRunning = true;
-    }
+   
 
     void Update()
     {
