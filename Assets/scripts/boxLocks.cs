@@ -13,12 +13,11 @@ public class boxLocks : MonoBehaviour
     public Text correctNumber2;
     public Text correctNumber3;
     public Text correctNumber4;
-    public Collider interactableCollider;
-    public Collider staticCollider;
     public GameObject codeLock;
     public bool codesolved;
     public GameObject keyLock;
     public bool keySolved;
+    
     // Update is called once per frame
     void Update()
     {
@@ -28,14 +27,8 @@ public class boxLocks : MonoBehaviour
             codesolved = true;
         }
 
-        if (keySolved == true && codesolved == true) 
-        {
-            interactableCollider.enabled = true;
-            staticCollider.enabled = false;
-        }
-    {
         
-    }
+   
 
 }
 
