@@ -14,6 +14,7 @@ public class Timer : MonoBehaviour
     public bool twoMinutes = false;
     public bool twoMinutesStop = false;
     public bool oneMinute = false;
+    public GameObject endMenu2;
 
    
 
@@ -69,10 +70,12 @@ public class Timer : MonoBehaviour
             }
             else
             {
-                Debug.Log("Time has run out!");
+                
                 timeRemaining = 0;
                 timerIsRunning = false;
                 watchBeep.Stop();
+                endMenu2.SetActive(true);
+
             }
         }
 

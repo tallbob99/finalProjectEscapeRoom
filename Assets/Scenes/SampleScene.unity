@@ -160,6 +160,7 @@ MonoBehaviour:
   twoMinutes: 0
   twoMinutesStop: 0
   oneMinute: 0
+  endMenu2: {fileID: 815790147}
 --- !u!4 &1706939
 Transform:
   m_ObjectHideFlags: 0
@@ -4381,6 +4382,7 @@ MonoBehaviour:
   interactableCollider: {fileID: 8333905693848479906}
   staticCollider: {fileID: 2076479528}
   Lock: {fileID: 544909267}
+  codeSolved: 0
 --- !u!114 &544909269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13402,6 +13404,7 @@ MonoBehaviour:
   correctNumber4: {fileID: 496381162}
   endMenu1: {fileID: 1433858642}
   timer: {fileID: 1706937}
+  codeSolved: 0
 --- !u!114 &919132148881551749
 MonoBehaviour:
   m_ObjectHideFlags: 0
