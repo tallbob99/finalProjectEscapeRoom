@@ -15,6 +15,7 @@ public class Timer : MonoBehaviour
     public bool twoMinutesStop = false;
     public bool oneMinute = false;
     public GameObject endMenu2;
+    public GameObject phone;
 
    
 
@@ -74,6 +75,7 @@ public class Timer : MonoBehaviour
                 timeRemaining = 0;
                 timerIsRunning = false;
                 watchBeep.Stop();
+                phone.SetActive(false);
                 endMenu2.SetActive(true);
 
             }
