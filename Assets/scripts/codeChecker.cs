@@ -20,15 +20,19 @@ public class codeChecker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //compares entered code to correct code
         if (codeSolved == false)
         {
             if (Number1.text == correctNumber1.text && Number2.text == correctNumber2.text && Number3.text == correctNumber3.text && Number4.text == correctNumber4.text)
             {
 
-
+               
                 Debug.Log("code correct");
+                
+                //allows interaction with locker door
                 interactableCollider.enabled = true;
                 staticCollider.enabled = false;
+                //disables lock
                 Lock.SetActive(false);
 
 

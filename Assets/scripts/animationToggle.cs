@@ -12,11 +12,12 @@ public class animationToggle : MonoBehaviour
 
     private void Start()
     {
+        //gets animator component from gameObject this script is attached to
         Animator = GetComponent<Animator>();
     }
     void Update()
     {
-
+        //plays animation when both locks unlocked
         if (lock1.activeSelf==false && lock2.activeSelf == false)
         {
             Animator.SetBool("Unlocked", true);

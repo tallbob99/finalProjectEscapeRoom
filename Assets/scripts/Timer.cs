@@ -23,13 +23,14 @@ public class Timer : MonoBehaviour
     {
         
 
-
+        // this part runs the actual timer
         if (timerIsRunning)
         {
             if (timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
+                // makes watch beep at 2 minutes
                 if (twoMinutes == false)
                 {
                     if (watchBeeping == false)
@@ -54,7 +55,7 @@ public class Timer : MonoBehaviour
                         }
                     }
                 }
-
+                // makes watch beep at one minute
                 if (oneMinute == false)
                 {
                     if (watchBeeping == false)
@@ -69,6 +70,7 @@ public class Timer : MonoBehaviour
                 }
 
             }
+            //stops timer and beeps when time run out
             else
             {
                 
@@ -83,7 +85,7 @@ public class Timer : MonoBehaviour
 
         
     }
-
+    //this bit makes it displayable as a text element
     void DisplayTime(float timeToDisplay)
     {
         timeToDisplay += 1;

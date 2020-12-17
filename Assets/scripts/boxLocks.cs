@@ -21,6 +21,7 @@ public class boxLocks : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // compares entered code to correct code
         if (Number1.text == correctNumber1.text && Number2.text == correctNumber2.text && Number3.text == correctNumber3.text && Number4.text == correctNumber4.text)
         {
             codeLock.SetActive(false);
@@ -34,7 +35,7 @@ public class boxLocks : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-
+        // unlocks key lock
         if (collision.collider.tag == "Key")
         {
             keyLock.SetActive(false);

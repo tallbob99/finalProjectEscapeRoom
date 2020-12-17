@@ -11,6 +11,7 @@ public class NumberLock : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //sets text to 0 
         Number.text = "0";
         
     }
@@ -19,6 +20,7 @@ public class NumberLock : MonoBehaviour
     public void ButtonToggle() 
     
     {
+        // increase text by one when button pressed
       if (Number.text == "0") 
        {
             Number.text = "1";
